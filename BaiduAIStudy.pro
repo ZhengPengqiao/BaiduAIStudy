@@ -26,10 +26,12 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+    customtabstyle.cpp
 
 HEADERS += \
-        mainwindow.h
+        mainwindow.h \
+    customtabstyle.h
 
 FORMS += \
         mainwindow.ui
@@ -41,3 +43,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 DISTFILES += \
     .gitignore
+
+RESOURCES += \
+    assert.qrc
