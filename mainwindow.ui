@@ -40,14 +40,12 @@ QTabWidget::tab-bar {
       <property name="tabPosition">
        <enum>QTabWidget::West</enum>
       </property>
-      <widget class="QWidget" name="tab_3">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="SettingForm" name="settingForm">
        <attribute name="title">
-        <string>Tab 1</string>
-       </attribute>
-      </widget>
-      <widget class="QWidget" name="tab_4">
-       <attribute name="title">
-        <string>Tab 2</string>
+        <string>全局配置</string>
        </attribute>
       </widget>
      </widget>
@@ -57,6 +55,14 @@ QTabWidget::tab-bar {
   <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>SettingForm</class>
+   <extends>QWidget</extends>
+   <header>settingform.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

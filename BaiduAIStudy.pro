@@ -27,14 +27,17 @@ CONFIG += c++11
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    customtabstyle.cpp
+    customtabstyle.cpp \
+    settingform.cpp
 
 HEADERS += \
         mainwindow.h \
-    customtabstyle.h
+    customtabstyle.h \
+    settingform.h
 
 FORMS += \
-        mainwindow.ui
+        mainwindow.ui \
+    settingform.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
