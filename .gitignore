@@ -36,3 +36,4 @@ aip-cpp-sdk*
 
 *.pro.user
 build*
+assert/BaiduAi_Setting.xml

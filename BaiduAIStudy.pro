@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui xml
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -27,13 +27,13 @@ CONFIG += c++11
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    customtabstyle.cpp \
-    settingform.cpp
+        customtabstyle.cpp \
+        settingform.cpp
 
 HEADERS += \
         mainwindow.h \
-    customtabstyle.h \
-    settingform.h
+        customtabstyle.h \
+        settingform.h
 
 FORMS += \
         mainwindow.ui \
@@ -45,7 +45,8 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 DISTFILES += \
-    .gitignore
+    .gitignore \
+    assert/BaiduAi_Setting.xml
 
 RESOURCES += \
     assert.qrc
