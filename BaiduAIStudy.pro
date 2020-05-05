@@ -17,6 +17,11 @@ TEMPLATE = app
 # deprecated API in order to know how to port your code away from it.
 DEFINES += QT_DEPRECATED_WARNINGS
 
+
+INCLUDEPATH += $$PWD/Doc/aip-cpp-sdk /usr/include/jsoncpp/
+LIBS += -lcurl -lcrypto -ljsoncpp
+
+
 # You can also make your code fail to compile if you use deprecated APIs.
 # In order to do so, uncomment the following line.
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
@@ -28,16 +33,19 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
         customtabstyle.cpp \
-        settingform.cpp
+        settingform.cpp \
+    ocrform.cpp
 
 HEADERS += \
         mainwindow.h \
         customtabstyle.h \
-        settingform.h
+        settingform.h \
+    ocrform.h
 
 FORMS += \
         mainwindow.ui \
-    settingform.ui
+    settingform.ui \
+    ocrform.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

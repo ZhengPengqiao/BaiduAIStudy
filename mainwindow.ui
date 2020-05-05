@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
+    <width>802</width>
     <height>600</height>
    </rect>
   </property>
@@ -41,18 +41,28 @@ QTabWidget::tab-bar {
        <enum>QTabWidget::West</enum>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="SettingForm" name="settingForm">
        <attribute name="title">
         <string>全局配置</string>
        </attribute>
       </widget>
+      <widget class="OcrForm" name="ocrForm">
+       <property name="minimumSize">
+        <size>
+         <width>751</width>
+         <height>0</height>
+        </size>
+       </property>
+       <attribute name="title">
+        <string>文字识别</string>
+       </attribute>
+      </widget>
      </widget>
     </item>
    </layout>
   </widget>
-  <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <customwidgets>
@@ -60,6 +70,12 @@ QTabWidget::tab-bar {
    <class>SettingForm</class>
    <extends>QWidget</extends>
    <header>settingform.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>OcrForm</class>
+   <extends>QWidget</extends>
+   <header>ocrform.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>
